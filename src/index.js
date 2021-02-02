@@ -1,11 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import PayTotalAmount from "./components/Paypal/PayTotalAmount";
+import "./styles/index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <PayTotalAmount />
-  </React.StrictMode>,
-  document.getElementById("PayTotalAmount")
-);
+import PaypalForm from "./components/Payments/paypalForm/PaypalForm.js";
+ReactDOM.render(<PaypalForm />, document.getElementById("root"));
