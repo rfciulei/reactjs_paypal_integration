@@ -57,6 +57,9 @@ class PaypalButton extends React.Component {
   }
   createOrder = (data, actions) => {
     return actions.order.create({
+      application_context: {
+        shipping_preference: "NO_SHIPPING",
+      },
       purchase_units: [
         {
           description: "",
